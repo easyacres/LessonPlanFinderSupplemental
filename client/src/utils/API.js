@@ -7,9 +7,9 @@ export default {
     //  Same naming as express routes.
   },
   // Gets the Lesson Only with the given id
-  // getLessonOnly: function(id) {
-  //   return axios.get("/api/lessonmain/" + id);
-  // },
+  getLessonOnly: function(id) {
+    return axios.get("/api/lessonmain/" + id);
+  },
   // Deletes the book with the given id
   deleteLessonFromMain: function(id) {
     return axios.delete("/api/lessonmain/" + id);

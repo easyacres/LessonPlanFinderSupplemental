@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+// import LessonMainSeed from "../../../scripts/seedDB"; NO IMPORT OUTSIDE OF src
 
 function LessonsMain() {
   //      ^^ Chg to File Name 
@@ -42,8 +43,8 @@ function LessonsMain() {
     //                  method     
   };
 
-  // When the form is submitted, use the API.saveLessontoMain method to save the book data
-  // Then reload books from the database
+  // When the form is submitted, use the API.saveLessontoMain method to save the Lesson data
+  // Then reload Lessons from the database
   function handleFormSubmit(event) {
     event.preventDefault();
     if (formObject.title && formObject.author) {
@@ -110,6 +111,12 @@ function LessonsMain() {
               //  Terniary Opeator for Rendering Result
             )}
           </Col>
+        </Row>
+        <Row>
+          <Jumbotron>
+            <h1>Search for Lessons</h1>
+            <h3>(Lessons that I didnt create)</h3>
+          </Jumbotron>
         </Row>
       </Container>
     );

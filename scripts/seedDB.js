@@ -9,6 +9,12 @@ mongoose.connect(
   //                    ^Database Name^
 );
 
+// Lesson Plan Parameters:
+//  Title
+//  Topic
+//  Synopsis
+//  Date?
+
 const LessonMainSeed = [
 
 {
