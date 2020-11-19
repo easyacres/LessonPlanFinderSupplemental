@@ -7,8 +7,6 @@ import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 
 function App() {
-    render () 
-    {
       return(
     <Router>
   
@@ -27,7 +25,7 @@ function App() {
   
     </Router>
       )
-        }
+        
       
 }
 
