@@ -7,9 +7,11 @@ import LessonsMain from "./pages/LessonsMain";
 import Nav from "./components/Nav";
 
 function App() {
-  return (
+    render () 
+    {
+      return(
     <Router>
-      <div>
+  
         <Nav />
         <Switch>
           <Route exact path={["/", "/lessonmain"]}>
@@ -22,9 +24,11 @@ function App() {
             <NoMatch />
           </Route> */}
         </Switch>
-      </div>
+  
     </Router>
-  );
+      )
+        }
+      
 }
 
 export default App;
